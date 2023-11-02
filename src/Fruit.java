@@ -18,7 +18,11 @@ public class Fruit {
         }
         System.out.println("The fruit's number per bush is: " + numBush);
     }
-    public Fruit(){
-
+    public Fruit(String paramColor, String paramShape, int paramNumSeeds, boolean paramIsRipe){
+        color = paramColor;
+        shape = paramShape;
+        numSeeds = paramNumSeeds;
+        isRipe = paramIsRipe;
+        numBush = (int) (Math.random()*100);
     }
 }

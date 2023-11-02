@@ -20,14 +20,16 @@ public class FruitHQ {
 
         // orange: orange, sphere, 10, yes, 20
         Fruit orange;
-        orange = new Fruit();
-        orange.color = "well, orange...";
-        orange.shape = "sphere";
-        orange.numBush = 10;
-        orange.isRipe = false;
-        orange.numSeeds = 20;
+        orange = new Fruit("well, orange...", "sphere", 20, false);
         orange.printInfo();
 
+        Fruit mango;
+        mango = new Fruit("yellowy orange", "oval", 1, false);
+        mango.printInfo();
+
+        Fruit raspberry;
+        raspberry = new Fruit("red", "small sphere", 40, true);
+        raspberry.printInfo();
     }
 
 }
